@@ -1,6 +1,3 @@
-/*colors*/
-/*#00539F*/
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -84,10 +81,6 @@
   text-align: center;
 }
 
-.home-modal .honey {
-  display: none !important;
-}
-
 .home-modal.open {
   opacity: 1;
   z-index: 30000;
@@ -97,9 +90,9 @@
   width:85%;
   max-width: 600px;
   margin:10% auto;
-  background-color: #fff;
+  background-color: #41414c;
   background-repeat: no-repeat;
-  color: #333;
+  color: #FFF;
   position: relative;
   box-shadow: 0 0 7px 7px rgba(0, 0, 0, .2);
 }
@@ -118,24 +111,24 @@
 
 .home-modal h2 {
   font-family: 'bebas_neueregular';
-  color: #00539F;
+  color: #ffc83b;
   font-size: 2.5em;
 }
 
 .home-modal p {
   font-family: 'open_sanssemibold';
-  color: #333;
+  color: #fff;
   padding: 0 10px;
 }
 
 .home-modal h4 {
     font-family: 'open_sanslight';
-    color: #333;
+    color: #fff;
     font-size: 12px;
 }
 
 .home-modal .modal-footer {
-  background-color: #00539F;
+  background-color: #c8c8ca;
   padding-bottom:1em;
 }
 
@@ -162,36 +155,33 @@
 }
 .home-modal #request-header {
     text-align: left;
-    color:#fff;
+    color:#41414c;
     margin: .5em 0;
-    letter-spacing: 1px;
 }
 .home-modal label {
     text-transform: uppercase;
-    color:#fff;
+    font-family: 'GandhiSans-Bold';
+    color:#41414c;
+    /*margin-bottom: 10px;*/
     font-size: 12px;
-}
-
-.homoe-modal .modal-footer {
 }
 .home-modal .modal-footer .button-wrapper {
     text-align: center;
 }
 
 .home-modal .modal-footer .button-wrapper #submit-request {
-    background-color: #AB5410;
-    color:#fff;
+    background-color: #ffc83b;
+    color:#41414c;
     width: 100%;
     font-family:'bebas_neueregular';
     font-size: 16px;
-    letter-spacing: 1px;
 }
 
 .home-modal .modal-footer .equal-housing {
     text-align: right;
 }
 
-.home-modal .modal-footer .equal-housing img {
+.home-modal .modal-footer .equal-housing svg {
     width: 5%;
 }
 
@@ -202,8 +192,8 @@
   right: 0px;
   text-decoration: none;
   font-size: 1.25em;
-  background-color: #D49C71;
-  color: #333;
+  background-color: #ffc83b;
+  color: #41414c;
 }
 
 #submit-message-container {
@@ -211,7 +201,7 @@
 }
 
 #submit-message-container h3 {
-    color: #00539F;
+    color: #ffc83b;
 }
 
 #submit-message-container img {
