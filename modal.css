@@ -1,0 +1,190 @@
+/*--------------------------------------------------------------
+# Modal Windows
+--------------------------------------------------------------*/
+
+.home-modal {
+  /*display: none;*/ /*display none for testing on live site*/
+  font-family: 'open_sanssemibold';
+  position: fixed;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .9);
+  z-index: -1;
+  overflow-y: scroll;
+  opacity:0; /*set to 0 when live, set to 1 for testing*/
+  transition: opacity .25s ease-out;
+  text-align: center;
+}
+
+.home-modal.open {
+  opacity: 1;
+}
+
+.home-modal > div {
+  width:85%;
+  max-width: 600px;
+  margin:10% auto;
+  background-color: #41414c;
+  background-repeat: no-repeat;
+  color: #FFF;
+  position: relative;
+  box-shadow: 0 0 7px 7px rgba(0, 0, 0, .2);
+}
+
+.home-modal > div > div {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.home-modal svg {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.home-modal h1 {
+  font-family: 'bebas_neueregular';
+  color: #ffc83b;
+  font-size: 2.5em;
+}
+
+.home-modal p {
+  font-family: 'open_sanssemibold';
+  color: #fff;
+  padding: 0 10px;
+}
+
+.home-modal h4 {
+    font-family: 'open_sanslight';
+    color: #fff;
+    font-size: 12px;
+}
+
+.home-modal .modal-footer {
+  background-color: #c8c8ca;
+  padding-bottom:1em;
+}
+
+.home-modal form {
+    display: inline-block;
+    width: 100%;
+}
+
+.home-modal form input[type="text"],
+.home-modal form input[type="email"],
+.home-modal form input[type="tel"] {
+    border: none;
+    border-radius: 0;
+    height: 35px;
+}
+.home-modal form input[type="submit"] {
+    border: none;
+    border-radius: 0;
+}
+.home-modal #request-header {
+    text-align: left;
+    color:#41414c;
+}
+.home-modal label {
+    text-transform: uppercase;
+    font-family: 'GandhiSans-Bold';
+    color:#41414c;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.home-modal .modal-footer .button-wrapper {
+    text-align: center;
+}
+
+.home-modal .modal-footer .button-wrapper #submit-request {
+    background-color: #ffc83b;
+    color:#41414c;
+    width: 100%;
+    font-family:'bebas_neueregular';
+    font-size: 16px;
+}
+
+.home-modal .modal-footer .equal-housing {
+    text-align: right;
+}
+
+.home-modal .modal-footer .equal-housing svg {
+    width: 5%;
+}
+
+.home-modal .close-modal {
+  display: inline-block;
+  padding: .25em .625em;
+  position: absolute;
+  right: 0px;
+  text-decoration: none;
+  font-size: 1.25em;
+  background-color: #ffc83b;
+  color: #41414c;
+}
+
+#submit-message-container {
+    height: auto;
+}
+
+#submit-message-container h3 {
+    color: #ffc83b;
+}
+
+#submit-message-container img {
+    width: 10%;
+}
+
+@media screen and (min-width:650px) {
+   .home-modal > div {
+    margin:5% auto;
+   }
+
+  .home-modal h1 {
+      font-size: 96px;
+      margin: 0;
+  }
+
+  .home-modal p {
+      font-size: 31px;
+      margin: 0 .3em .5em;
+  }
+
+  .home-modal h4 {
+      font-size: 14px;
+  }
+
+  .home-modal form {
+      width: 85%;
+  }
+
+  .home-modal #request-header {
+      font-size:28px;
+      margin-left: 42px;
+  }
+
+  .home-modal label {
+      font-size: 14px;
+  }
+
+  .home-modal .modal-footer .button-wrapper #submit-request {
+      font-size: 20px;
+      padding: 10px;
+      margin-top: 20px;
+  }
+
+  #submit-message-container h3 {
+      padding: 0;
+      margin: .5em 0;
+      font-size: 3em;
+  }
+
+  #submit-message-container p {
+      font-size: 1.5em;
+      padding: 1em 1.5em;
+  }
+}
